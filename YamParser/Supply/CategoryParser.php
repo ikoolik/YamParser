@@ -48,7 +48,8 @@ class CategoryParser {
 
             $data = [
                 'id' => $id,
-                'name' => $pq_block->find('.b-offers__name')->text()
+                'name' => $pq_block->find('.b-offers__name')->text(),
+                'price' => str_replace(chr(0xC2).chr(0xA0), "", $pq_block->find('.b-prices__num')->text())
             ];
             $goods[] = $data;
         }
