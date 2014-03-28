@@ -6,7 +6,8 @@ require_once __DIR__.'/../YamParser/YamParser.php';
 
 $parser = new YamParser(6269371);
 echo '<pre>';
-$category = $parser->parseCategory(7156311, '1801946~EQ~sel~7291067');
-foreach($category->getGoods() as $model) {
-    var_dump($model->parsePictures());
-}
+echo 'HELLO, DUDE!';
+//$category = $parser->parseCategory(7156311, '1801946~EQ~sel~7291067');
+//foreach($category->getGoods() as $model) {
+//    var_dump($model->parsePictures());
+//}
